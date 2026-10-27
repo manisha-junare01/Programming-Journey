@@ -26,7 +26,7 @@ def main():
     STATE.parent.mkdir(parents=True, exist_ok=True)
 
     if STATE.exists():
-        uploaded = set(json.loads(STATE.read_text(encoding="utf-8")))
+        uploaded = set(json.loads(STATE.read_text(encoding="utf-8-sig")))
     else:
         uploaded = {"program1.c", "program2.cpp"}
 
@@ -72,3 +72,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
