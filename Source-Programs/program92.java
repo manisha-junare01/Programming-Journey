@@ -1,0 +1,38 @@
+import java.util.*;
+
+class DigitX
+{
+    public int ReverseDigits(int iNo)
+    {
+        int iDigit = 0;
+        int iRev = 0;
+        while(0 != iNo)
+        {
+            iDigit = iNo % 10;
+            iRev = (iRev * 10) + iDigit;
+            iNo = iNo / 10;
+            
+        }
+       
+        return iRev;
+    }
+}  
+
+class program92
+{
+    public static void main(String a[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        DigitX dobj = new DigitX();
+
+        int iValue  =0;
+        int iRet = 0;
+        
+        System.out.println("Enter Number : ");
+        iValue = sobj.nextInt();
+        
+        iRet = dobj.ReverseDigits(iValue);
+        System.out.println("Reverse of Digits : " + iRet);
+
+    }
+}
