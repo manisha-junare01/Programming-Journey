@@ -1,10 +1,12 @@
 [
   "program1.c",
+  "program10.c",
   "program2.cpp",
   "program3.java",
   "program4.c",
   "program5.c",
   "program6.c",
   "program7.c",
-  "program8.c"
+  "program8.c",
+  "program9.c"
 ]
